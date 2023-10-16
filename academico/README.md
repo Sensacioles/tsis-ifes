@@ -1,0 +1,2 @@
+Códigos em HTML e CSS para replicação de página de Acadêmico para a disciplina de Front End I.
+Arquivo README criado para testar comandos git ensinados na disciplina de Trabalho Colaborativo em Mídias Digitais.
