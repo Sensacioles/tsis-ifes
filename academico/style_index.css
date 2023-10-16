@@ -1,0 +1,51 @@
+body{
+    background-color:gray;
+}
+h1{
+    font-size: x-large;
+    font-weight: bold;
+}
+h2{
+    font-size: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    font-size: x-small;
+}
+#Fundo{
+    float:center;
+    background-color: #F7F2E7;
+    height: 500px;
+    width: 800px;
+    border-radius: 30px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-width: 10px;
+}
+
+#Boasvindas{
+    float:center;
+}
+
+#Links{
+    float: left;
+    font-size: 200%;
+    height: 250px;
+}
+
+#Imagens{
+    clear:both;
+    height: 100px;
+}
+#Imagem_1{
+    height: 200px;
+    width: 400px;
+    float:left;
+}
+#Imagem_2{
+    height: 200px;
+    width: 200px;
+    float: right;
+}
