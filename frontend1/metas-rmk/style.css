@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --cor-bg: #f6f6f657;
+    --cor-menu: #2da63f;
+    --cor-secundaria: #18d935;
+    --cor-button: #094913;
+}
+.material-symbols-outlined{
+    padding-right: 7px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.menu{
+    background-color: var(--cor-menu);
+    flex-grow: 1;
+}
+.center-lin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+menu .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 10px;
+}
+.menu a{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-button);
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.4s;
+}
+.menu a:hover{
+    background-color: var(--cor-bg);
+    color: black;
+    transform: scale(1.10)
+}
+.menu credits{
+    display: flex;
+    align-items: center;
+}
+.menu botcredits{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+.main{
+    background-color: #f6f6f68e;
+    flex-grow: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main a{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-button);
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.4s;
+}
+a:hover{
+    background-color: var(--cor-secundaria);
+    color: white;
+    transform: scale(1.10)
+}
+.main img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: var(--cor-secundaria);
+}
+h2{
+    color: #15bf2f;
+    width: 1000px;
+    font-size: 60px;
+    font-weight: 20;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(160, 160, 160);
+}
