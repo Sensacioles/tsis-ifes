@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Introdução a JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>Receitas & Cia.</h1>
+        </div>
+    </header>
+    <main>
+        <h1>Clique no botão <b>"Ver receita"</b> das opções abaixo para visualizar os ingredientes e modo de preparo!</h1>
+        <div class="receitas">
+            <div class="salgadas">
+                <h1>Salgadas</h1>
+                <div class="item"><h2>Bobó de camarão</h2><button onclick="camarao()">Ver receita</button>
+                </div>
+                <div class="item"><h2>Torta de frango</h2><button onclick="frango()">Ver receita</button>
+                </div>
+            </div>
+            <div class="doces">
+                <h1>Doces</h1>
+                <div class="item">
+                    <h2>Bolo de cenoura</h2> <button onclick="cenoura()">Ver receita</button>
+                </div>
+                <div class="item">
+                    <h2>Churros</h2> <button onclick="churros()">Ver receita</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script>
+        function camarao(){
+            alert("Abra o console para visualizar receita de Bobó de camarão!");
+            console.clear();
+            console.log("Ingredientes:\n3kgs de camarão com casca; \n2kgs de mandioca cozida e batida no liquidificador com um pouco de leite; \n2 garrafas de leite de coco; \n200m de azeite de dendê;\n1 cebola picada;\n2 dentes de alho picados;\nAzeite de oliva, sal e pimenta a gosto.");
+            console.log("Modo de fazer:\nLimpe os camarões. À parte, ferva as cabeças e cascas em um pouco de água. Depois, retire as cascas e as cabeças, reservando o caldo. Refogue os camarões no azeite de oliva, com todos os temperos. Quando pronto, junte o caldo do camarão e deixe no fogo mais um pouco. Acrescente sal e pimenta a gosto. Depois coloque o purê de mandioca e o dendê. Deixe ferver, mexendo sempre com uma colher de madeira, para formar uma mistura homogênea. Por último, acrescente o leite de coco e desligue antes que ferva. Sirva com arroz branco e qualquer tipo de peixe frito talhado");
+        }
+        function frango(){
+            alert("Abra o console para visualizar receita de Torta de frango!");
+            console.clear();
+            console.log("Ingredientes:\n3 ovos;\n2 copos de leite;\n1/2 xícara (chá) de óleo;\n13 colheres (sopa) de farinha de trigo;\n1 colher (chá) de sal;\n1 colher (sopa) de fermento em pó.");
+            console.log("Recheio:\nPeito de frango desfiado e refogado");
+            console.log("Modo de fazer: \nBater no liquidificador todos os ingredientes, despejar em forma untada e misturar bem devagar o peito de frango. Levar ao forno por cerca de 25 minutos.");
+        }
+        function cenoura(){
+            alert("Abra o console para visualizar receita de Bolo de cenoura!");
+            console.clear();
+            console.log("Ingredientes:\n250g de cenoura crua picadas;\n4 ovos inteiros;\n1 xícara (chá) de óleo;\n1 1/2 xícara (chá) de açúcar;\n5 colheres (sopa) de farinha láctea Nestlé;\n2 xícaras (chá) de farinha de trigo;\n2 colheres (sopa) de chocolate em pó;\n1 colher (sopa) de fermento em pó.");
+            console.log("Ingredientes da cobertura:\n1 xícara (chá) de açúcar de confeiteiro peneirado;\n1 xícara (chá) de chocolate em pó;\n1/2 xícara (chá) de leite.")
+            console.log("Modo de fazer:\nBata a cenoura com ovos no liquidificador, junte o óleo, o açúcar, a farinha láctea e, por último, a farinha peneirada com o chocolate e o fermento. Despeje em forma retangular untada e asse em forno médio (180ºC) por 40 minutos ou até que, espetando um palito, ele saia seco. Misture todos os ingredientes do glacê e espalhe sobre o bolo ainda quente.");
+        }
+        function churros(){
+            alert("Abra o console para visualizar receita de Churros!");
+            console.clear();
+            console.log("Ingredientes:\n2 xícaras (chá) de água (ou leite);\n1 colher (café) de sal;\n1 xícara (chá) de farinha de trigo peneirada;\n1 colher (chá) de margarina;\nAçúcar refinado para confeitar;\nDoce de leite para rechear.");
+            console.log("Modo de fazer:\nLevar ao fogo a água, o sal e a farinha, mexendo sempre até desempelotar. Acrescente a margarina e continue mexendo até formar bolhas. Retirar do fogo e deixar esfriar. Depois de frio, fazer o churro com saco de confeitar e fritar em óleo bem quente. Passar no açúcar e rechear com o doce de leite.");
+        }
+    </script>
+</body>
+</html>
