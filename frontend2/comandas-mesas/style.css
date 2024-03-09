@@ -1,0 +1,194 @@
+/*Configuracao universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Configuracao geral*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+/*Configuracao do cabecalho*/
+header{
+    background-color: #fff462;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /*Logo*/
+    .headerlogo img{
+        width: 150px;
+    }
+    /*Bloco do menu/opcoes*/
+    .bttn{
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        font-weight: 500;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: uppercase;
+    }
+    /*Links*/
+    .bttn a{
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+    }
+    /*Botao ativo*/
+    .activebttn{
+        padding: 0px 15px;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    /*Cursor sobre links*/
+    .bttn a:hover{
+        background-color: black;
+        color: white;
+        transition: .1s;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+/*Configuracao do conteudo principal*/
+main{
+    background-color: #d1e489;
+    flex-grow: 1;
+}
+/*Configuracao do conteudo principal da pagina de projeto*/
+.projeto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    
+    /*Imagem da marmita*/
+    .thumbnail img{
+        height: 400px;
+        clip-path: polygon(10% 0, 75% 0, 100% 100%, 30% 100%);
+    }
+    /*Bloco de texto*/
+    .intro{
+        flex-direction: row;
+    }
+    .introtext{
+        padding: 30px 0px;
+    }
+    .introtext h1{
+        font-weight: bold;
+        font-size: 60px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .introtext h2{
+        font-weight: 300;
+        font-size: 30px;
+    }
+    /*Link para cardapio*/
+    .bttn a{
+        font-size: 28px;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color:peru;
+        border-radius: 25px;
+    }
+    .bttn a:hover{
+        background-color: black;
+        transition: .3s;
+    }
+}
+/*Configuracao do conteudo principal da pagina de mesas*/
+.mesas{
+    padding: 5%;
+    /*Imagem das mesas*/
+    .thumbnail img{
+        height: 200px;
+        width: 200px;
+    }
+    .description{
+        padding: 1%;
+        h1{
+            padding-bottom: 1%;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        h2{
+            padding-bottom: 1%;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        /*Link para mesa*/
+        .bttn a{
+            font-size: 28px;
+            padding: 5px 5px;
+            text-decoration: none;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color:peru;
+            border-radius: 25px;
+        }
+        .bttn a:hover{
+            background-color: black;
+            transition: .3s;
+        }
+    }
+    .mesaum,.mesadois,.mesatres{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+}
+/*Configuracao do conteudo principal da pagina de comandas*/
+.comandas{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    h1{
+        font-size: 40px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-transform: uppercase;
+    }
+    h2{
+        display: inline;
+        padding-right: 3%;
+        font-weight: 300;
+        font-size: 30px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: capitalize;
+    }
+    h3{
+        display: inline;
+        font-weight: 200;
+        font-size: 20px;
+        background-color:cornsilk;
+        border-radius: 25px;
+        padding: .5%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    item{
+        display: flex;
+        flex-direction: column;
+    }
+    .lancadas{
+        padding: 1%;
+        border:darkolivegreen;
+        border-width: 5px;
+        border-radius: 25px;
+        border-style: solid;
+    }
+    .canceladas{
+        padding: 1%;
+        border:maroon;
+        border-width: 5px;
+        border-radius: 25px;
+        border-style: solid;
+    }
+}
