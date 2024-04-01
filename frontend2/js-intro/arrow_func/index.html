@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a Arrow Functions</title>
+</head>
+<body>
+    <h1>Exercício de introdução a arrow functions</h1>
+    <h2>Insira nos seguintes campos, as notas:</h2>
+
+    <p>Nota 1: <input type="number" id="notaUm"> Nota 2: <input type="number" id="notaDois"> Nota 3: <input type="number" id="notaTres"></p>
+
+    <p>Escolha uma média. A para Aritmética, P para Ponderada e H para Harmônica: <input id="tipoMedia" type="text"> <button onclick="imprimir()">Calcular média</button></p>
+    
+    <h3 >Sua média é igual a: <p id="media"></p></h3>
+
+    <script type="text/javascript">
+        
+        let calculaMedia = (notaUm,notaDois,notaTres,tipoMedia) =>{
+            switch (tipoMedia.toUpperCase()){
+                case "A": 
+                    return (notaUm+notaDois+notaTres)/3;
+                case "P": 
+                    return ((notaUm*5)+(notaDois*3)+(notaTres*2))/10;
+                case "H": 
+                    return 3/((1/notaUm)+(1/notaDois)+(1/notaTres));
+            }
+        }
+        let imprimir = () => {
+            const p = document.getElementById("media");
+            
+            const notaUm = parseInt(document.getElementById("notaUm").value);
+            const notaDois = parseInt(document.getElementById("notaDois").value);
+            const notaTres = parseInt(document.getElementById("notaTres").value);
+            const tipoMedia = document.getElementById("tipoMedia").value;
+            
+            p.innerHTML = calculaMedia(notaUm, notaDois, notaTres, tipoMedia);
+        }
+    </script>
+</body>
+</html>
