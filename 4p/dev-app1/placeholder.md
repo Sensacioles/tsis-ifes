@@ -1,0 +1,1 @@
+TBD: Projeto utilizando flutter sendo desenvolvido. Terminando, ele será adicionado a este repositório para evitar conflitos de entregas
