@@ -1,0 +1,16 @@
+{
+  "name": "produtos-crud",
+  "version": "1.0.0",
+  "description": "atividade de criação e manipulação de arquivo json",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "author": "Giovanni Sencioles",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
